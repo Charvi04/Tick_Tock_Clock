@@ -1,18 +1,32 @@
+var men,menImg;
+
+function preload(){
+  menImg = loadImage("Images/men.png");
+}
+
 function setup() {
-  createCanvas(400,450);
-  createSprite(400, 200, 50, 50);
-  angleMode(DEGREES)
+  createCanvas(800,550);
+  
+
+  angleMode(DEGREES);
+  men = createSprite(25, 350);
+  men.addImage(menImg);
 }
 
 function draw() {
   background(0);
 
-  fill(255);
+  
   textSize(30);
   textStyle("bold");
-  textFont("Times New Roman")
+  textFont("Times New Roman");
+  fill("yellow")
   text("Tick-Tock Clock", 100,400); 
-  
+  fill(rgb(0, 252, 231))
+  text("Thank you so much!!",420,250);
+  fill(255);
+  text("Now, we can open the lock ",400,300)
+text("when the clock shows 12:00",400,350);
 
 translate(200,200)
 rotate (-90);
