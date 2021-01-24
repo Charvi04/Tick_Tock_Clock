@@ -25,8 +25,10 @@ function draw() {
   fill(rgb(0, 252, 231))
   text("Thank you so much!!",420,250);
   fill(255);
-  text("Now, we can open the lock ",400,300)
-text("when the clock shows 12:00",400,350);
+
+text("The pink one is the minute hand.",400,350);
+  text("The blue one is the second hand.",400,400);
+    text("The green one is the hour hand.",400,300);
 
 translate(200,200)
 rotate (-90);
